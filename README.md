@@ -12,7 +12,7 @@
 
 ## Planteamiento del Problema
 
-El gimnasio *Darkness Fitness* enfrenta desafíos significativos debido a la falta de un sistema centralizado para la gestión de membresías y pagos. Actualmente, los procesos se realizan de manera manual, lo que genera ineficiencias, errores en el registro de clientes y dificultades en el seguimiento de los pagos y vencimientos de membresías.
+El gimnasio *Darkness Gym* enfrenta desafíos significativos debido a la falta de un sistema centralizado para la gestión de membresías y pagos. Actualmente, los procesos se realizan de manera manual, lo que genera ineficiencias, errores en el registro de clientes y dificultades en el seguimiento de los pagos y vencimientos de membresías.
 
 ---
 
