@@ -63,6 +63,38 @@ Nueva máscara de subred:
 
 ![Topología de red](image.png)
 
+Para calcular las direcciones de **red** y **broadcast**, se sigue este principio:
+
+- La **dirección de red** se obtiene **poniendo en 0 todos los bits de la parte de host**.
+- La **dirección de broadcast** se obtiene **poniendo en 1 todos los bits de la parte de host**.
+
+Esto permite definir los rangos válidos de direcciones IP utilizables dentro de una subred específica.
+
+---
+
+### Dirección de red (`ponemos en 0 la parte de host`)
+
+| Posición de bits     | 24  | 25  | 26  | /27 | 16 | 8  | 4  | 2  | 1  |
+|----------------------|-----|-----|-----|-----|----|----|----|----|----|
+| Valor del bit        |128  | 64  | 32  |     | 16 | 8  | 4  | 2  | 1  |
+| Bits utilizados      | 0   | 0   | 0   |  0  | 0  | 0  | 0  | 0  | 0  |
+| Resultado final      | → → → → → → → → → | **192.168.0.0** (Dirección de red) |
+
+🔹 Esta dirección identifica **la subred completa**, y **no se puede asignar a un host**.
+
+---
+
+### Dirección de broadcast (`ponemos en 1 la parte de host`)
+
+| Posición de bits     | 24  | 25  | 26  | /27 | 16 | 8  | 4  | 2  | 1  |
+|----------------------|-----|-----|-----|-----|----|----|----|----|----|
+| Valor del bit        |128  | 64  | 32  |     | 16 | 8  | 4  | 2  | 1  |
+| Bits utilizados      | 0   | 0   | 0   |  1  | 1  | 1  | 1  | 1  | 1  |
+| Resultado final      | → → → → → → → → → | **192.168.0.31** (Dirección de broadcast) |
+
+🔸 Esta dirección se utiliza para **enviar mensajes a todos los hosts de la subred**
+
+
 #### Primera Subred:
 
 - Dirección de red: `192.168.0.0`
