@@ -37,6 +37,8 @@ Desarrollar un sistema automatizado para el gimnasio **Darkness Gym** que permit
 
 Se creará una red de forma local (LAN) destinada a segmentar de manera ordenada las conexiones internas del grupo de TICs 4B, el cual requiere dividir direcciones IP entre 5 equipos. Para lograr esto de forma eficiente, se aplicará el proceso de **subnetting**, con el objetivo de asignar el espacio de direcciones disponible de forma equitativa y optimizada.
 
+
+
 ### IPv4: Subnetting
 
 Partimos de una red base:
@@ -58,6 +60,8 @@ Entonces, **n = 3**, lo que nos da **8 direcciones por subred**, de las cuales *
 Nueva máscara de subred:
 /24 + 3 = /27 → 255.255.255.224
 
+
+![Topología de red](image.png)
 
 #### Primera Subred:
 
