@@ -112,18 +112,37 @@ Estas direcciones serán utilizadas por los dispositivos del equipo.
 ### IPv6
 
 
-A diferencia de IPv4, el direccionamiento IPv6 tiene un espacio mucho mayor y permite la asignación automática de direcciones mediante mecanismos como **EUI-64**, además de separar tipos de direcciones según su función.
-
+A diferencia del direccionamiento IPv4, el protocolo IPv6 permite una asignación más flexible y eficiente de direcciones IP gracias a su espacio extendido y mecanismos de autoconfiguración, como EUI-64.    
+    
+Para nuestro proyecto, optamos por utilizar asignación automática de direcciones mediante EUI-64, ya que reduce la carga administrativa y garantiza unicidad a partir de la dirección MAC de cada dispositivo. Esta técnica se implementa fácilmente en entornos LAN y facilita la configuración de nodos.
+    
 #### Tipos de Direcciones IPv6 en Redes LAN
 
 | Tipo de dirección | Descripción                          | Ejemplo               |
 |-------------------|--------------------------------------|------------------------|
 | GUA               | Global Unicast Address (red pública) | 2001:db8:1:1::/64      |
 | LLA               | Link-Local Address (uso interno local) | FE80::/10            |
-| EUI-64            | Formato para autogenerar la dirección | Usa el MAC del dispositivo |
+| EUI-64            | Dirección autogenerada a partir de la MAC | Basada en prefijo como 2001:db8:1:a::/64 |
 
-> Para nuestro proyecto, se utilizará **EUI-64**  
-> Prefijo utilizado: `2001:db8:1:a::/64`
+Ejemplo de Configuración IPv6    
+1. Dirección Asignada Automáticamente (EUI-64)    
+Prefijo utilizado: 2001:db8:1:a::/64
+Dirección generada automáticamente a partir de la MAC
+```bash
+interface g0/1
+ipv6 address 2001:db8:1:a::/64 eui-64
+ipv6 enable
+```
+Esta configuración permite que el dispositivo genere su dirección completa combinando el prefijo con su MAC, sin necesidad de intervención manual.    
+
+2. Dirección Asignada Manualmente    
+En contraste, también se puede asignar una dirección estática para un nodo específico, útil por ejemplo en un servidor o router principal donde se requiere una IP fija conocida.
+```bash
+interface g0/1
+ipv6 address 2001:db8:1:a::1/64
+ipv6 enable
+```    
+Esta dirección fue asignada de forma manual, por lo que se debe asegurar que no entre en conflicto con otras direcciones del mismo prefijo.
 
 ---
 
