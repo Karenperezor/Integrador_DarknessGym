@@ -71,33 +71,30 @@ Para calcular las direcciones de **red** y **broadcast**, se sigue este principi
 Esto permite definir los rangos válidos de direcciones IP utilizables dentro de una subred específica.
 
 ---
+#### Dirección de red
 
-#### Dirección de red 
+Ponemos en **0** la parte del host para obtener la dirección de red:
 
+| Posición de bits  | 24  | 25  | 26  | 27  | 28 | 29 | 30 | 31 |
+|-------------------|-----|-----|-----|-----|----|----|----|----|
+| Valor del bit     | 128 |  64 |  32 |  16 |  8 |  4 |  2 |  1 |
+| Bits utilizados   |  0  |  0  |  0  |  0  |  0 |  0 |  0 |  0 |
 
-| Posición de bits     | 24  | 25  | 26   /27  |    |    |    |    | 
-|----------------------|-----|-----|-----|-----|----|----|----|----|
-| Valor del bit        |128  | 64  | 32  | 16  | 8  | 4  | 2  | 1  |
-| Bits utilizados      | 0   | 0   | 0   |  0  | 0  | 0  | 0  | 0  |
-
-
-Resultado: **192.168.0.0** 
-
-🔹 Esta dirección identifica **la subred completa**, y **no se puede asignar a un host**.
+🔹 **Resultado:** `192.168.0.0` → Esta dirección **identifica la subred** y **no se puede asignar a un host**.
 
 ---
 
-#### Dirección de broadcast (`ponemos en 1 la parte de host`)
+#### Dirección de broadcast
 
-| Posición de bits     | 24  | 25  | 26   /27  |    |    |    |    | 
-|----------------------|-----|-----|-----|-----|----|----|----|----|
-| Valor del bit        |128  | 64  | 32  | 16  | 8  | 4  | 2  | 1  |
-| Bits utilizados      | 0   | 0   | 0   |  1  | 1  | 1  | 1  | 1  |
+Ponemos en **1** la parte del host para obtener la dirección de broadcast:
 
+| Posición de bits  | 24  | 25  | 26  | 27  | 28 | 29 | 30 | 31 |
+|-------------------|-----|-----|-----|-----|----|----|----|----|
+| Valor del bit     | 128 |  64 |  32 |  16 |  8 |  4 |  2 |  1 |
+| Bits utilizados   |  0  |  0  |  0  |  1  |  1 |  1 |  1 |  1 |
 
-Resultado:    **192.168.0.31**
+🔹 **Resultado:** `192.168.0.31` → Esta es la **última dirección de la subred** y tampoco se puede asignar a un host.
 
-🔸 Esta dirección se utiliza para **enviar mensajes a todos los hosts de la subred**
 
 
 #### Primera Subred:
