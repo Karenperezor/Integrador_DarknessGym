@@ -75,7 +75,7 @@ Esto permite definir los rangos válidos de direcciones IP utilizables dentro de
 
 Ponemos en **0** la parte del host para obtener la dirección de red:
 
-| Posición de bits  | 24  | 25  | 26  | 27  | 28 | 29 | 30 | 31 |
+                                       /27  
 |-------------------|-----|-----|-----|-----|----|----|----|----|
 | Valor del bit     | 128 |  64 |  32 |  16 |  8 |  4 |  2 |  1 |
 | Bits utilizados   |  0  |  0  |  0  |  0  |  0 |  0 |  0 |  0 |
@@ -88,7 +88,7 @@ Ponemos en **0** la parte del host para obtener la dirección de red:
 
 Ponemos en **1** la parte del host para obtener la dirección de broadcast:
 
-| Posición de bits  | 24  | 25  | 26  | 27  | 28 | 29 | 30 | 31 |
+                                       /27  
 |-------------------|-----|-----|-----|-----|----|----|----|----|
 | Valor del bit     | 128 |  64 |  32 |  16 |  8 |  4 |  2 |  1 |
 | Bits utilizados   |  0  |  0  |  0  |  1  |  1 |  1 |  1 |  1 |
