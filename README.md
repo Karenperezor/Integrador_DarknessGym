@@ -75,10 +75,10 @@ Esto permite definir los rangos válidos de direcciones IP utilizables dentro de
 #### Dirección de red 
 
 
-| Posición de bits     | 24  | 25  | 26  | /27 | 16 | 8  | 4  | 2  | 1  |
-|----------------------|-----|-----|-----|-----|----|----|----|----|----|
-| Valor del bit        |128  | 64  | 32  |     | 16 | 8  | 4  | 2  | 1  |
-| Bits utilizados      | 0   | 0   | 0   |  0  | 0  | 0  | 0  | 0  | 0  |
+| Posición de bits     | 24  | 25  | 26   /27  |    |    |    |    | 
+|----------------------|-----|-----|-----|-----|----|----|----|----|
+| Valor del bit        |128  | 64  | 32  | 16  | 8  | 4  | 2  | 1  |
+| Bits utilizados      | 0   | 0   | 0   |  0  | 0  | 0  | 0  | 0  |
 
 
 Resultado: **192.168.0.0** 
@@ -89,10 +89,10 @@ Resultado: **192.168.0.0**
 
 #### Dirección de broadcast (`ponemos en 1 la parte de host`)
 
-| Posición de bits     | 24  | 25  | 26  | /27 | 16 | 8  | 4  | 2  | 1  |
-|----------------------|-----|-----|-----|-----|----|----|----|----|----|
-| Valor del bit        |128  | 64  | 32  |     | 16 | 8  | 4  | 2  | 1  |
-| Bits utilizados      | 0   | 0   | 0   |  1  | 1  | 1  | 1  | 1  | 1  |
+| Posición de bits     | 24  | 25  | 26   /27  |    |    |    |    | 
+|----------------------|-----|-----|-----|-----|----|----|----|----|
+| Valor del bit        |128  | 64  | 32  | 16  | 8  | 4  | 2  | 1  |
+| Bits utilizados      | 0   | 0   | 0   |  1  | 1  | 1  | 1  | 1  |
 
 
 Resultado:    **192.168.0.31**
