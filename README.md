@@ -333,7 +333,10 @@ A continuación, se detallan las configuraciones realizadas en los **dispositivo
 
 # Configuración de Equipos de Red - Darkness Gym
 
+
 ## Configuración del Router (IPv4 & IPv6)
+
+![router](router.png)
 
 1. **Entrar al modo privilegiado y luego al modo de configuración global**:
    ```bash
@@ -371,6 +374,10 @@ A continuación, se detallan las configuraciones realizadas en los **dispositivo
    ```
 
 ## Configuración del Switch
+
+![Switch](switch.png)
+
+
 1. **Entrar al modo privilegiado y luego a configuración**:
    ```bash
    enable
@@ -436,7 +443,12 @@ A continuación, se detallan las configuraciones realizadas en los **dispositivo
    login local
    ```
 
+
+
 ##  Configuración de la PC Administrador (Servidor Web)
+
+![Configuracion PC](configuracionPC.png)
+
 1. **Asignar dirección IP estática**:
    - **IPv4**: 172.16.0.3
    - **Máscara**: 255.255.255.224
