@@ -46,7 +46,7 @@ Instituto Tecnológico Superior del Occidente del Estado de Hidalgo
 
 ---
 
-## III.Resumen Ejecutivo
+## III. Resumen Ejecutivo
 
 El presente proyecto integrador tiene como finalidad desarrollar un sistema automatizado para el gimnasio **Darkness Gym**, con el propósito de mejorar la administración de clientes, membresías y pagos, reduciendo errores manuales y centralizando el control operativo.  
 
@@ -145,7 +145,7 @@ para permitir el acceso al sistema de gestión de Darkness Gym dentro de la red 
 ## VII. Descripción y justificación de la topología física y lógica
 
 
-![Topología de red](topologia.png)
+![Topología de red](topologia.jpg)
 
 ###  Topología Física
 
