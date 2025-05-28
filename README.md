@@ -22,9 +22,11 @@ Instituto Tecnológico Superior del Occidente del Estado de Hidalgo
 
 ---
 
-## II.Índice
+## II. Índice
 
+<a name="inicio"></a>
 ## Índice
+
 
 1. [Reporte Técnico](#reporte-técnico)
    - [I. Portada](#i-portada)
@@ -43,6 +45,8 @@ Instituto Tecnológico Superior del Occidente del Estado de Hidalgo
    - [XIV. Resultados](#xiv-resultados)
    - [XV. Trabajos Futuros](#xv-trabajos-futuros)
    - [XVI. Conclusiones](#xvi-conclusiones)
+   - [XVII. Fuentes de Información](#xvii-fuentes-de-información)
+
 
 ---
 
@@ -56,6 +60,8 @@ Se aplicó la metodología ágil **SCRUM**, dividiendo el proyecto en cinco spri
 
 Los resultados obtenidos confirman que el sistema es funcional, escalable y adecuado para las necesidades del gimnasio. Se logró una red segura, una aplicación web estable y un modelo de base de datos eficiente. Este trabajo integra conocimientos de programación, bases de datos, redes, arquitectura de computadoras e ingeniería de software.
 
+[Volver al índice](#ii-índice)
+
 ---
 
 ## IV. Introducción
@@ -66,9 +72,10 @@ La relevancia de este proyecto se extiende a sectores como la **educación**, al
 
 En la actualidad, muchas microempresas enfrentan dificultades por falta de herramientas tecnológicas adaptadas a sus necesidades. Por ello, desarrollar una solución a medida, con infraestructura de red y sistema web funcional, contribuye no solo a la digitalización de procesos, sino también al fortalecimiento de la gestión operativa, sirviendo como modelo replicable para otros negocios similares.
 
+[Volver al índice](#ii-índice)
 ---
 
-## V. Descripción de la problemática y la organización
+##  V. Descripción de la Problemática y la Organización
 
 La organización **Darkness Gym** es un gimnasio local que opera sin herramientas tecnológicas de gestión. Su sistema actual se basa en registros manuales, lo que provoca errores en el seguimiento de pagos, duplicación de datos, pérdida de información y poca visibilidad del estado de las membresías de los clientes.
 
@@ -78,6 +85,7 @@ La falta de conectividad estructurada impide el funcionamiento de un sistema web
 
 A través de este proyecto, se propone implementar una **red LAN segmentada mediante subnetting**, estableciendo conexiones entre un servidor, dispositivos de administración y los nodos necesarios para que el sistema funcione localmente con seguridad y eficiencia.
 
+[Volver al índice](#ii-índice)
 ---
 
 ## VI. Requerimientos de la organización con respecto a la red
@@ -96,22 +104,18 @@ Con base en el análisis de la situación actual del gimnasio **Darkness Gym** y
 
 Con esta configuración, Darkness Gym contará con una red eficiente, segura y preparada para alojar el sistema de gestión desarrollado específicamente para sus necesidades.
 
+
 ---
-
-
-
 
 ## Planteamiento del Problema
 
 El gimnasio *Darkness Gym* enfrenta desafíos significativos debido a la falta de un sistema centralizado para la administración de membresías y pagos; los procesos se realizan de manera manual, lo que genera ineficiencias, errores en el registro de clientes y dificultades en el seguimiento de los pagos y vencimientos de membresías.
 
----
 
 ## Objetivo General
 
 Desarrollar un sistema automatizado para el gimnasio "Darkness Gym" que permita administrar de forma eficiente las membresías de los clientes, incluyendo el registro de pagos y el control de mensualidades, utilizando una base de datos central gestionada desde interfaces web.
 
----
 
 ## Objetivos Específicos
 -	Recolectar y analizar los requerimientos del cliente mediante entrevistas directas con el personal de "Darkness Gym", con el fin de identificar las necesidades clave de gestión, como el control de pagos, membresías.
@@ -140,9 +144,11 @@ para validar la operatividad de la red y garantizar comunicación estable entre 
 - Implementar un servidor local con sistema operativo Windows 10, que aloje la aplicación web desarrollada en ASP.NET MVC 8 con SQL Server,
 para permitir el acceso al sistema de gestión de Darkness Gym dentro de la red LAN, sin depender de servicios en la nube.
 
+[Volver al índice](#ii-índice)
+
 ---
 
-## VII. Descripción y justificación de la topología física y lógica
+## VII. Descripción y Justificación de Topología Física y Lógica
 
 
 ![Topología de red](topologia.jpg)
@@ -190,10 +196,12 @@ La elección de esta topología se basa en:
 
 Con esta topología se asegura **conectividad confiable**, organización interna clara y la posibilidad de **ampliar** la red de manera sencilla en caso de crecimiento.
 
+[Volver al índice](#ii-índice)
+
 ---
 
 
-##  VIII. Protocolos y estándares empleados en el proyecto
+##  VIII. Listado de Protocolos y Estándares Empleados
 
 Durante el desarrollo e implementación del sistema **Darkness Gym**, se utilizaron distintos **protocolos y estándares de red** que permitieron la comunicación entre dispositivos físicos reales (router, switch y PCs), la conexión al sistema web y la protección de los datos transmitidos en la red.
 
@@ -222,9 +230,12 @@ A continuación, se presenta una tabla organizada por capas del modelo **OSI**, 
 
 Gracias al uso de estos protocolos y estándares, se logró una **implementación funcional y real** sobre dispositivos físicos, garantizando **comunicación segura, estructurada y eficiente** entre todos los componentes del sistema. La red LAN de Darkness Gym no solo cumple con los principios teóricos del modelo OSI, sino que los aplica directamente en un entorno físico real con **hardware de Cisco** y una **infraestructura web moderna**.
 
+
+[Volver al índice](#ii-índice)
+
 ---
 
-##  IX. Descripción del esquema de direccionamiento IPv4 e IPv6
+## IX. Descripción de Esquema de Direccionamiento IPv4 o IPv6
 
 ###  Esquema de Direccionamiento
 
@@ -262,6 +273,8 @@ Además, se asignaron **direcciones IPv6** con el prefijo `2001:db8:1:2::/64`, u
 Este esquema asegura **alta disponibilidad, organización y trazabilidad**, garantizando un entorno de red confiable para el correcto funcionamiento del sistema Darkness Gym.
 
 
+[Volver al índice](#ii-índice)
+
 ---
 
 
@@ -279,6 +292,8 @@ Para proteger la red LAN implementada en el proyecto **Darkness Gym**, se aplica
 - **Banner de advertencia**: Se incluyó un mensaje de advertencia para usuarios no autorizados.
 - **Usuarios personalizados**: Se creó el usuario `sa` con contraseña segura `sa123`, aplicado en login local.
 - **Bloqueo de interfaces no utilizadas** (recomendado para producción, no implementado en laboratorio por fines de práctica).
+
+[Volver al índice](#ii-índice)
 
 ---
 
@@ -311,6 +326,8 @@ A continuación, se detallan las configuraciones realizadas en los **dispositivo
 | Switch | `username sa password sa123` | Crea usuario con acceso privilegiado local |
 | Switch | `crypto key generate rsa` | Habilita clave para sesiones SSH |
 | Switch | `ip domain-name d.local` | Requerido para la generación de claves RSA |
+
+[Volver al índice](#ii-índice)
 
 ---
 
@@ -438,6 +455,9 @@ A continuación, se detallan las configuraciones realizadas en los **dispositivo
    ping 172.16.0.2      # Al switch
    ping 2001:db8:1:2::1 # IPv6 al router
 
+
+[Volver al índice](#ii-índice)
+
 ---
 
 ## XII. Pruebas de Conectividad de la Red
@@ -464,6 +484,8 @@ Se realizaron pruebas de conectividad entre los dispositivos del proyecto Darkne
 
 >  Todas las pruebas confirman que la conectividad dentro de la red LAN es funcional tanto en IPv4 como IPv6. También se comprobó acceso al sistema web a través de `http://192.168.0.3:5250`.
 
+
+[Volver al índice](#ii-índice)
 ---
 
 ##  XIII. Inventario de equipos de red
@@ -479,6 +501,9 @@ A continuación se presenta el inventario de los dispositivos utilizados en el m
 | Cables de red    | Genéricos     | CAT 5e       | Conectividad Ethernet                        |
 | Rack de red      | Genérico      | Vertical     | Soporte físico para dispositivos de red       |
 
+
+[Volver al índice](#ii-índice)
+
 ---
 
 ##  XIV. Resultados
@@ -488,6 +513,8 @@ A continuación se presenta el inventario de los dispositivos utilizados en el m
 - ✔ La aplicación web desarrollada en ASP.NET MVC fue desplegada correctamente en un servidor local accesible por IP.
 - ✔ El sistema garantiza integridad de datos, acceso controlado por credenciales, y funcionamiento dentro de una red segura.
 - ✔ La estructura física de red fue montada utilizando equipo real (racks Cisco), simulando un entorno empresarial.
+
+[Volver al índice](#ii-índice)
 
 ---
 
@@ -500,5 +527,40 @@ A continuación se presenta el inventario de los dispositivos utilizados en el m
 -  **Gestión de inventario** para control de suplementos, equipo, etc.
 -  **Implementación en red pública con dominio propio y certificado SSL**.
 
+
+[Volver al índice](#ii-índice)
+
 ---
 
+## XVI. Conclusiones
+
+El desarrollo del sistema Darkness Gym permitió integrar conocimientos clave de redes, programación, arquitectura de computadoras, bases de datos e ingeniería de software. Mediante una red LAN diseñada con direccionamiento IPv4 e IPv6, logramos asegurar la conectividad local del sistema web.
+
+Durante la implementación, se demostró la importancia de comprender el modelo TCP/IP, particularmente las capas **Red**, **Transporte**, **Sesión** y **Aplicación**:
+
+- **Red:** Encargada del direccionamiento IP y enrutamiento entre nodos.
+- **Transporte:** Se utilizó TCP para garantizar la entrega de datos entre el servidor ASP.NET y el navegador.
+- **Sesión:** Coordinación de conexiones persistentes mediante protocolos como SSH y Telnet.
+- **Aplicación:** Implementación de servicios web y base de datos accesibles desde navegadores.
+
+Gracias al uso de ASP.NET con MVC y Entity Framework, se logró una arquitectura limpia, escalable y con acceso eficiente a datos.
+
+Se validó la seguridad, la funcionalidad y la conectividad del sistema. Se cumplieron todos los objetivos del proyecto, ofreciendo una solución robusta y útil para un negocio real.
+
+
+[Volver al índice](#ii-índice)
+
+---
+
+## XVII. Fuentes de Información
+
+1. A. Tanenbaum, "Computer Networks", 5th ed., Pearson, 2010.
+2. Microsoft Docs. "ASP.NET MVC Overview", https://learn.microsoft.com/en-us/aspnet/mvc/overview, [Accedido: 25-may-2025].
+3. Cisco Networking Academy, "Switch and Router Configuration", Cisco Press, 2022.
+4. Microsoft Learn. “Entity Framework Core”, https://learn.microsoft.com/en-us/ef/core/, [Accedido: 25-may-2025].
+5. T. Szigeti, C. Hattingh, R. Barton, K. Briley Jr., "End-to-End QoS Network Design", Cisco Press, 2013.
+6. Microsoft Docs. “Introduction to ASP.NET Core MVC”, https://learn.microsoft.com/en-us/aspnet/core/mvc/
+7. Cisco. “IPv6 Configuration Guide”, https://www.cisco.com/c/en/us/td/docs/ios/ipv6/configuration/guide/12_2sx/ipv6.pdf
+8. IBM. “Entity Framework vs. ADO.NET”, https://www.ibm.com/docs/en/i/7.4?topic=frameworks-entity-net
+9. Oracle. “Database Security Best Practices”, https://www.oracle.com/security/database-security/
+10. Stack Overflow. "What is the use of EUI-64 in IPv6?", https://stackoverflow.com/questions/21689966/what-is-the-use-of-eui-64-in-ipv6
