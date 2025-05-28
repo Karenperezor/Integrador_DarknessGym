@@ -566,13 +566,18 @@ Se validó la seguridad, la funcionalidad y la conectividad del sistema. Se cump
 
 ## XVII. Fuentes de Información
 
-1. A. Tanenbaum, "Computer Networks", 5th ed., Pearson, 2010.
-2. Microsoft Docs. "ASP.NET MVC Overview", https://learn.microsoft.com/en-us/aspnet/mvc/overview, [Accedido: 25-may-2025].
-3. Cisco Networking Academy, "Switch and Router Configuration", Cisco Press, 2022.
-4. Microsoft Learn. “Entity Framework Core”, https://learn.microsoft.com/en-us/ef/core/, [Accedido: 25-may-2025].
-5. T. Szigeti, C. Hattingh, R. Barton, K. Briley Jr., "End-to-End QoS Network Design", Cisco Press, 2013.
-6. Microsoft Docs. “Introduction to ASP.NET Core MVC”, https://learn.microsoft.com/en-us/aspnet/core/mvc/
-7. Cisco. “IPv6 Configuration Guide”, https://www.cisco.com/c/en/us/td/docs/ios/ipv6/configuration/guide/12_2sx/ipv6.pdf
-8. IBM. “Entity Framework vs. ADO.NET”, https://www.ibm.com/docs/en/i/7.4?topic=frameworks-entity-net
-9. Oracle. “Database Security Best Practices”, https://www.oracle.com/security/database-security/
-10. Stack Overflow. "What is the use of EUI-64 in IPv6?", https://stackoverflow.com/questions/21689966/what-is-the-use-of-eui-64-in-ipv6
+- Cisco Networking Academy, CCNA: Introduction to Networks, Cisco Press, 2022. Disponible en Cisco Networking Academy.
+
+- T. Szigeti, C. Hattingh, R. Barton y K. Briley Jr., End-to-End QoS Network Design: Quality of Service for Rich-Media & Cloud Networks, 2ª ed., Cisco Press, 2013. Disponible en Cisco Press.
+
+- Microsoft Docs, "ASP.NET MVC Overview," https://learn.microsoft.com/en-us/aspnet/mvc/overview. [Accedido: 25-may-2025].
+
+- Microsoft Learn, "Entity Framework Core," https://learn.microsoft.com/en-us/ef/core/. [Accedido: 25-may-2025].
+
+- Microsoft Docs, "Introduction to ASP.NET Core MVC," https://learn.microsoft.com/en-us/aspnet/core/mvc/. [Accedido: 25-may-2025].
+
+- IBM, "Entity Framework vs. ADO.NET," https://www.ibm.com/docs/en/i/7.4?topic=frameworks-entity-net. [Accedido: 25-may-2025].
+
+- Oracle, "Database Security Best Practices," https://www.oracle.com/security/database-security/. [Accedido: 25-may-2025].
+
+
