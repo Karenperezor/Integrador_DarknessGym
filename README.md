@@ -502,6 +502,8 @@ Se realizaron pruebas de conectividad entre los dispositivos del proyecto Darkne
 
 ##  XIII. Inventario de equipos de red
 
+![rack](rack.png)
+
 A continuación se presenta el inventario de los dispositivos utilizados en el montaje de la red del sistema Darkness Gym:
 
 | Dispositivo     | Marca         | Modelo       | Características principales                   |
